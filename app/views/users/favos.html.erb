@@ -55,8 +55,9 @@
         <% end %>
       </li>
     </ul>
+    </ul>
     
-    <%= render 'users', users: @followers %>
+    <%= render 'microposts/microposts', microposts: @favos, user: @user %>
     
   </div>
 </div>

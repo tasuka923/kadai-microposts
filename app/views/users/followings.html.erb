@@ -45,6 +45,16 @@
           </span>
         <% end %>
       </li>
+      
+      <li class="<%= 'active' if current_page?(favos_user_path(@user)) %>">
+        <%= link_to favos_user_path(@user) do %>
+          Favorites
+          <span class="badge">
+            <%= @count_favos %>
+          </span>
+        <% end %>
+      </li>
+    </ul>
     </ul>
     
     <%= render 'users', users: @followings %>
